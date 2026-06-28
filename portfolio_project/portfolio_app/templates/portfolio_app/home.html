@@ -1,0 +1,106 @@
+<!-- home.html -->
+
+{% extends 'portfolio_app/base.html' %}
+{% load static %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+
+<section class="hero">
+
+```
+<div class="hero-content">
+    <h1>Muhammad Ali</h1>
+
+    <h2>Python & Django Developer</h2>
+
+    <p>
+        Welcome to my portfolio website. I am passionate about
+        web development and software engineering. I enjoy building
+        modern web applications using Python and Django.
+    </p>
+
+    <div class="hero-buttons">
+        <a href="{% url 'projects' %}" class="btn">View Projects</a>
+        <a href="{% url 'contact' %}" class="btn btn-outline">Contact Me</a>
+    </div>
+</div>
+
+<div class="hero-image">
+{% load static %}
+
+<img src="{% static 'portfolio_app/images/profile.jpg' %}" alt="Profile Image">
+</div>
+```
+
+</section>
+
+<section class="about">
+
+```
+<h2>About Me</h2>
+
+<p>
+    I am a Computer Science student with a strong interest in web
+    development and programming. I enjoy learning new technologies
+    and solving real-world problems through software.
+</p>
+
+<div class="about-grid">
+
+    <div class="card">
+        <h3>Education</h3>
+        <p>Intermediate in Computer Science</p>
+        <p>Future Software Engineer</p>
+    </div>
+
+    <div class="card">
+        <h3>Interests</h3>
+        <p>Web Development</p>
+        <p>Python Programming</p>
+        <p>Graphic Designing</p>
+    </div>
+
+    <div class="card">
+        <h3>Career Goal</h3>
+        <p>
+            To become a successful Software Engineer and
+            build innovative applications.
+        </p>
+    </div>
+
+    <div class="card">
+        <h3>Strengths</h3>
+        <p>Problem Solving</p>
+        <p>Quick Learning</p>
+        <p>Team Work</p>
+    </div>
+
+</div>
+```
+
+</section>
+
+<section class="skills">
+
+```
+<h2>Technical Skills</h2>
+
+<div class="skills-grid">
+
+    <div class="skill-card">HTML</div>
+    <div class="skill-card">CSS</div>
+    <div class="skill-card">Python</div>
+    <div class="skill-card">Django</div>
+    <div class="skill-card">SQLite</div>
+    <div class="skill-card">Bootstrap</div>
+    <div class="skill-card">Javascripts</div>
+    <div class="skill-card">Reactjs</div>
+
+</div>
+```
+
+</section>
+
+{% endblock %}
